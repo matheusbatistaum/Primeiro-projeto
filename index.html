@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Botafoguense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="Título">Pesquisa sobre os melhores jogadores do Botafogo!</h1>
+        <p id="Subtítulo"> Complete suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="Grupo">
+
+           <div class="Campo">
+             <label for="nome"><strong>Nome</strong></label>
+             <input type="text" name="nome" id="nome" required>
+            </div>
+
+
+            <div class="Campo">
+                <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="Campo">
+
+            <label> <strong>Qual lugar você é ?</strong> </label>
+
+            <label>
+                <input type="radio" name="torcedor" value="sofrimento" checked>Rio de Janeiro
+            </label>
+
+            <label>
+                <input type="radio" name="torcedor" value="sofrimento" checked>Outro lugar do Brasil
+            </label>
+
+            <label>
+                <input type="radio" name="torcedor" value="sofrimento" checked>Fora do Brasil 
+            </label>
+        </div>
+
+        <fieldset class="Grupo">
+            <div id="check">
+                <label><strong>Marque alguns melhores jogadores do Botafogo na sua opinião:</strong></label> <br>
+                <input type="checkbox" id="apaixonados1" value="Dodô">
+                <label for="apaixonados1"> Dodô</label>
+                <input type="checkbox" id="apaixonados2" value="Túlio Maravilha">
+                <label for="apaixonados2"> Túlio Maravilha</label>
+                <input type="checkbox" id="apaixonados3" value="Loco Abreu">
+                <label for="apaixonados3"> Loco Abreu</label>
+                <input type="checkbox" id="apaixonados4" value="Garrincha">
+                <label for="apaixonados4"> Garrincha</label> <br>
+                <input type="checkbox" id="apaixonados5" value="Nilton Santos"> 
+                <label for="apaixonados5"> Nilton Santos</label>
+                <input type="checkbox" id="apaixonados6" value="Didi">
+                <label for="apaixonados6"> Didi</label>
+                <input type="checkbox" id="apaixonados7" value="Sergio Manoel">
+                <label for="apaixonados7"> Sergio Manoel</label>
+                <input type="checkbox" id="apaixonados8" value="Quarentinha">
+                <label for="apaixonados8"> Quarentinha</label>
+                <input type="checkbox" id="apaixonados9" value="Sinval">
+                <label for="apaixonados9"> Sinval</label>
+             </div>
+
+
+        </fieldset>
+
+        <div class="Campo">
+
+            <label for="experiencia"><strong>Cite outro jogador caso não esteja na enquete: </strong></label>
+
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Enviar Pesquisa</button>
+
+
+    </form>
+</body>
+</html>
